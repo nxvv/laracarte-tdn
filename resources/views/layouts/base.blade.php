@@ -11,15 +11,22 @@
 </head>
 
 <style>
+
+    .container{
+        margin-top:20px;
+    }
+
     #description{
         margin-top: 60px;
         margin-bottom: 15px;
     }
 
     #footer{
-        margin-top: 400px;
+        margin-top: 40px;
     }
+
 </style>
+
 <body>
 
     @include('layouts/partials/_nav')

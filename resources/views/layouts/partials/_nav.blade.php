@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="{{ route('home') }}">Laracarte</a>
+    <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,8 +27,8 @@
             <a class="dropdown-item" href="https://larachat.co">Larachat</a>
           </div>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Contact</a>
+        <li class="nav-item {{ set_active_route('contact') }}">
+          <a class="nav-link" href="{{ route('contact') }}">Contact</a>
         </li>
       </ul>
       <ul class="navbar-nav navbar-right">
