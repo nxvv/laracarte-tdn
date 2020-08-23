@@ -16,3 +16,4 @@ Route::get('/contact', 'ContactsController@create')->name('contact.create');
 
 Route::post('/contact','ContactsController@store')->name('contact.store');
 
+

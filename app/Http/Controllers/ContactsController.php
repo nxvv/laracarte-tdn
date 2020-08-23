@@ -16,10 +16,11 @@ class ContactsController extends Controller
     }
 
     public function store(ContactRequest $request){
+
         
         $message = Message::create($request->only('name','email','message'));
         $mailable = new ContactMessageCreated($message);
-        Mail::to('admin@laracarte.com')->send($mailable);
+        Mail::to(config('laracarte.admin_support_email'))->send($mailable);
 
         flash('Nous vous répondrons dans les plus brefs délais.','success');
 
