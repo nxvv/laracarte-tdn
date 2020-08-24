@@ -1,12 +1,12 @@
-@extends('layouts.base', ["title"=>"Contact"] )
+@extends('layouts.app', ["title"=>"Contact"] )
 
 @section('content')
-    
+
     <div class="container" >
         <div class="row">
             <div class="col-md-6 col-md-offset-2 col-sm-10 col-sm-offset-1" >
                 <h2>Get In Touch</h2>
-                <p class="text-muted">If you have trouble with this service, please 
+                <p class="text-muted">If you have trouble with this service, please
                     <a href="mailto:{{ config('laracarte.admin_support_email') }}">ask for a help.</a>
                 </p>
 

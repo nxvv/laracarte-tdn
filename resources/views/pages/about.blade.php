@@ -1,4 +1,4 @@
-@extends('layouts.base',['title'=>'About'])
+@extends('layouts.app',['title'=>'About'])
 
 @section('content')
 
@@ -9,5 +9,5 @@
             Feel free to improve <a href="https://github.com/nxvv/{{ config('app.name') }}-tdn">the source code</a>.
         </p>
     </div>
-    
+
 @endsection
